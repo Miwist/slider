@@ -1,37 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
     <title>Slider</title>
+    <link rel="stylesheet" href="slider.css" />
   </head>
-  <body>
-    <h1>Слайдер</h1>
-    <div class="flex-wrapper">
-      <div class="slider-wrapper">
-        <div class="slide active">
-          <img class="img-fluid" src="./img/img_1.jpg" alt="city" />
+  <h1>Slider</h1>
+  <hr>
+    <body class="wrapper">
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-item first-item">
+            <img src="img/1.jpg" class="slider-img" alt="1 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/2.jpg" class="slider-img" alt="2 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/3.jpg" class="slider-img" alt="3 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/4.jpg" class="slider-img" alt="4 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/5.jpg" class="slider-img" alt="5 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/6.jpg" class="slider-img" alt="6 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/7.jpg" class="slider-img" alt="7 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/8.jpg" class="slider-img" alt="8 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/9.jpg" class="slider-img" alt="9 slide" />
+          </div>
+          <div class="slider-item">
+            <img src="img/10.jpg" class="slider-img" alt="10 slide" />
+          </div>
         </div>
-        <div class="slide">
-          <img class="img-fluid" src="./img/img_2.jpg" alt="city" />
-        </div>
-        <div class="slide">
-          <img class="img-fluid" src="./img/img_3.jpg" alt="city" />
-        </div>
-        <button class="btn-prev">left</button>
-        <button class="btn-next">right</button>
       </div>
-      <div class="dots-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="slider-buttons">
+        <button class="button-prev">Prev</button>
+        <button class="button-next">Next</button>
       </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+      <div class="slider-dots">
+        <span class="slide-dot" onclick="itemCur(0)"></span>
+        <span class="slide-dot" onclick="itemCur(1)"></span>
+        <span class="slide-dot" onclick="itemCur(2)"></span>
+        <span class="slide-dot" onclick="itemCur(3)"></span>
+        <span class="slide-dot" onclick="itemCur(4)"></span>
+        <span class="slide-dot" onclick="itemCur(5)"></span>
+        <span class="slide-dot" onclick="itemCur(6)"></span>
+        <span class="slide-dot" onclick="itemCur(7)"></span>
+        <span class="slide-dot" onclick="itemCur(8)"></span>
+        <span class="slide-dot" onclick="itemCur(9)"></span>
+      </div>
+      <script src="slider.js"></script>
+    </body>
 </html>
