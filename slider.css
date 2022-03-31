@@ -77,14 +77,3 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 480px) {
-  body {
-   max-width: 480px;
- }
-  img { max-width: 480px;
- }
- .slider-container {
-  max-width: 480px;
-  max-height: 480px;
- }
-}
